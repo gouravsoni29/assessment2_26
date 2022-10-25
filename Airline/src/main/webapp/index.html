@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Reservation System</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="header.css">
+    <style>
+        .accordion-item {
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-3 text-bg-dark fixed-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-danger"><strong>AirIndia</strong></a></li>
+                    <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                    <li><a href="#about" class="nav-link px-2 text-white">About Us</a></li>
+                    <li><a href="#service" class="nav-link px-2 text-white">Services</a></li>
+                    <li><a href="#faq" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <a href="admin.html"><button type="button" class="btn btn-outline-light me-2">Login
+                            Admin</button></a>
+                    <!-- <button type="button" class="btn btn-warning">Sign-up</button> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!--end of header-->
+    <!-- Carosoal-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="b1.jpg" class="d-block w-100" alt="..." style="width:640px;height:360px">
+            </div>
+            <div class="carousel-item">
+                <img src="b2.jpg" class="d-block w-100" alt="..." style="width:640px;height:360px">
+            </div>
+            <div class="carousel-item">
+                <img src="b3.jpg" class="d-block w-100" alt="..." style="width:640px;height:360px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end -->
+    <!-- About Us -->
+
+    <div class="b-example-divider"></div>
+
+    <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom"></h2>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5" id="about">
+            <div class="d-flex flex-column align-items-start gap-2">
+                <h3 class="fw-bold">ABOUT US</h3>
+                <p class="text-muted">Air India is the flag carrier airline of India, headquartered at New Delhi. It is
+                    owned by Talace Private Limited, a Special-Purpose Vehicle of Tata Sons, after Air India Limited's
+                    former owner, the Government of India, completed the sale.</p>
+                <a href="https://www.airindia.in/" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="d-flex flex-column gap-2">
+                    <div
+                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#collection" />
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Tata Group</h4>
+                    <p class="text-muted">Founded by Jamsetji Tata in 1868, the Tata Group is a global enterprise,
+                        headquartered in India, comprising 30 companies across 10 verticals. </p>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <div
+                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#gear-fill" />
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">The Air Indians</h4>
+                    <p class="text-muted">Air India has a dedicated and skilled workforce from all over India and abroad
+                        united by the spirit to connect homes and hearts.</p>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <div
+                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#speedometer" />
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Our Fleet</h4>
+                    <p class="text-muted">Air India has a state-of -the-art fleet, comprising of Boeing (777-200LR,
+                        777-300ER and 787-800 Dreamliner).</p>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+                    <div
+                        class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                        <svg class="bi" width="1em" height="1em">
+                            <use xlink:href="#table" />
+                        </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0">Air India Brand</h4>
+                    <p class="text-muted">The Air India logo features a red swan (symbolising flight) with spokes in
+                        orange placed inside.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end About Us -->
+
+
+
+    <!-- Services -->
+    <div class="b-example-divider"></div>
+
+    <div class="container px-4 py-5" id="service">
+        <h2 class="pb-2 border-bottom">Services</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#toggles2" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Search Flight</h3>
+                    <p>Search available flight in a fast way with <strong>AirIndia.</strong> </p>
+                    <a href="search.html" class="btn btn-primary">
+                        Click Here
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#cpu-fill" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Book Flight</h3>
+                    <p>Booking a flight is now simple with easy cacellation.</p>
+                    <a href="book.html" class="btn btn-primary">
+                        Click here
+                    </a>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start">
+                <div
+                    class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#tools" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="fs-2">Check In</h3>
+                    <p>Online check-in by self has made check-in process very simple.</p>
+                    <a href="check.html" class="btn btn-primary">
+                        Click here
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end of services-->
+
+    <!--FAQ-->
+    <div class="b-example-divider"></div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item" id="faq">
+            <h2 class="pb-2 border-bottom">FAQs</h2>
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    How much weight is allowed?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>All Tickets would be eligible for baggage allowance of 25 Kgs for Adult / Children and 10 Kgs for
+                        infant on domestic sectors on the entire spectrum of Economy class RBDs .</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Is your Flight Reservation/Itinerary verifiable?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Yes, we provide verifiable flight itineraries which can be confirmed on the official website of
+                        the corresponding airline.
+
+                        For verifying or confirming the Flight Itinerary, simply enter the unique six-digit alphabetical
+                        or alphanumeric PNR code [also dubbed as booking code or reservation code] and your surname at
+                        the website of corresponding airline. The verifiable Flight Itinerary for visa application
+                        issued by our team is valid for two weeks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Can I select the airline that I want to get a reservation from?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Definitely. For this purpose, simply write down the name of your preferred airline in the
+                        additional details box of Flight Itinerary while placing the order.
+
+                        Sometimes, there are no seats available on the preferred airline. In that scenario, our team
+                        will pick the next available airline to make the reservation for you. For any further
+                        information or query, you can connect with us through our 24/7 live chat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end FAQ-->
+
+
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 AirIndia, Inc</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Services</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!--Footer end-->
+</body>
+
+</html>
